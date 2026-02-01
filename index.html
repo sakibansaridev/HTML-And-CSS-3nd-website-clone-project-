@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WebBuilder - Create Your Dream Website</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- GSAP -->
+		<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar">
+			<div class="container">
+				<div class="nav-content">
+					<div class="logo">WebBuilder</div>
+					<ul class="nav-links">
+						<li><a href="#features">Features</a></li>
+						<li><a href="#templates">Templates</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<button class="btn-primary">Get Started</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="hero">
+			<!-- 🎥 HERO VIDEO -->
+			<video class="hero-video" autoplay muted loop playsinline>
+				<!-- <source src="video/hero-bg.mp4" type="video/mp4" /> -->
+			</video>
+
+			<!-- GLOW OVERLAY -->
+			<div class="glow-overlay"></div>
+
+			<!-- CONTENT -->
+			<div class="hero-content">
+				<h1 class="hero-title">Crafting Digital Experiences</h1>
+				<p class="hero-subtitle">
+					We build premium, immersive and high-end digital products for modern
+					brands.
+				</p>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="features-section">
+			<!-- Background Video -->
+			<video class="bg-video" autoplay muted loop playsinline>
+				<source
+					src="https://freestockfootagearchive.com/wp-content/uploads/2020/07/Motion_Background_Dark_Water_Abstract.mp4"
+					type="video/mp4"
+				/>
+			</video>
+
+			<!-- Dark Overlay -->
+			<div class="overlay"></div>
+
+			<div class="features-wrapper" id="Features">
+				<h2 class="features-title">Our Capabilities</h2>
+
+				<div class="features-grid">
+					<div class="feature-card">
+						<h3>3D Experiences</h3>
+						<p>Immersive WebGL & Three.js driven brand experiences.</p>
+					</div>
+
+					<div class="feature-card">
+						<h3>Motion Design</h3>
+						<p>Luxury cinematic animations with GSAP timelines.</p>
+					</div>
+
+					<div class="feature-card">
+						<h3>Interactive UI</h3>
+						<p>Cursor driven micro-interactions & parallax systems.</p>
+					</div>
+
+					<div class="feature-card">
+						<h3>Scroll Storytelling</h3>
+						<p>Scroll-based camera movement & narrative sections.</p>
+					</div>
+
+					<div class="feature-card">
+						<h3>Real-Time 3D</h3>
+						<p>GLB / GLTF models with lighting & depth.</p>
+					</div>
+
+					<div class="feature-card">
+						<h3>Luxury Branding</h3>
+						<p>Dark, minimal, high-end visual systems.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Templates Section -->
+		<section class="templates" id="templates">
+			<div class="container">
+				<h2 class="section-title">Choose Your Template</h2>
+				<p class="section-subtitle">Professional designs for every business</p>
+				<div class="templates-grid">
+					<div class="template-card">
+						<div class="template-image template-1">
+							<div class="template-overlay">
+								<button class="btn-template">Preview</button>
+							</div>
+						</div>
+						<div class="template-info">
+							<h4>Business Pro</h4>
+							<span class="template-tag popular">POPULAR</span>
+						</div>
+					</div>
+					<div class="template-card">
+						<div class="template-image template-2">
+							<div class="template-overlay">
+								<button class="btn-template">Preview</button>
+							</div>
+						</div>
+						<div class="template-info">
+							<h4>Creative Portfolio</h4>
+							<span class="template-tag new">NEW</span>
+						</div>
+					</div>
+					<div class="template-card">
+						<div class="template-image template-3">
+							<div class="template-overlay">
+								<button class="btn-template">Preview</button>
+							</div>
+						</div>
+						<div class="template-info">
+							<h4>E-Commerce</h4>
+							<span class="template-tag trending">TRENDING</span>
+						</div>
+					</div>
+					<div class="template-card">
+						<div class="template-image template-4">
+							<div class="template-overlay">
+								<button class="btn-template">Preview</button>
+							</div>
+						</div>
+						<div class="template-info">
+							<h4>Landing Page</h4>
+							<span class="template-tag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing Section -->
+		<section class="pricing" id="pricing">
+			<div class="container">
+				<h2 class="section-title">Simple Pricing</h2>
+				<p class="section-subtitle">Choose the plan that's right for you</p>
+				<div class="pricing-grid">
+					<div class="pricing-card">
+						<h3>Starter</h3>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="amount">0</span>
+							<span class="period">/mo</span>
+						</div>
+						<ul class="features-list">
+							<li><span class="check">✓</span> 1 Website</li>
+							<li><span class="check">✓</span> 5 GB Storage</li>
+							<li><span class="check">✓</span> Basic Templates</li>
+							<li><span class="check">✓</span> Email Support</li>
+						</ul>
+						<button class="btn-outline">Get Started</button>
+					</div>
+					<div class="pricing-card featured">
+						<div class="popular-badge">MOST POPULAR</div>
+						<h3>Professional</h3>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="amount">29</span>
+							<span class="period">/mo</span>
+						</div>
+						<ul class="features-list">
+							<li><span class="check">✓</span> 5 Websites</li>
+							<li><span class="check">✓</span> 50 GB Storage</li>
+							<li><span class="check">✓</span> All Templates</li>
+							<li><span class="check">✓</span> Priority Support</li>
+							<li><span class="check">✓</span> Custom Domain</li>
+						</ul>
+						<button class="btn-primary">Get Started</button>
+					</div>
+					<div class="pricing-card">
+						<h3>Enterprise</h3>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="amount">99</span>
+							<span class="period">/mo</span>
+						</div>
+						<ul class="features-list">
+							<li><span class="check">✓</span> Unlimited Websites</li>
+							<li><span class="check">✓</span> Unlimited Storage</li>
+							<li><span class="check">✓</span> Premium Templates</li>
+							<li><span class="check">✓</span> 24/7 Support</li>
+							<li><span class="check">✓</span> Custom Code Access</li>
+						</ul>
+						<button class="btn-outline">Get Started</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="cta">
+			<div class="container">
+				<div class="cta-content">
+					<h2 class="cta-title">Ready to Build Your Dream Website?</h2>
+					<p class="cta-subtitle">
+						Join thousands of businesses already using WebBuilder
+					</p>
+					<button class="btn-cta">Start Building Now</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer" id="contact">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h4 class="footer-logo">WebBuilder</h4>
+						<p>
+							Build your dream website with the most powerful website builder on
+							the market.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h5>Product</h5>
+						<ul>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Templates</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Integrations</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h5>Company</h5>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h5>Support</h5>
+						<ul>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Documentation</a></li>
+							<li><a href="#">Community</a></li>
+							<li><a href="#">Status</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 WebBuilder. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
